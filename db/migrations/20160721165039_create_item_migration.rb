@@ -5,3 +5,4 @@ class CreateItemMigration < ActiveRecord::Migration
       t.datetime :picked_at
   end
 end
+end

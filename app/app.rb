@@ -10,5 +10,9 @@ class App < Sinatra::Base
     erb :"homepage.html"
   end
 
+  get "/lists" do
+    #erb :"(i dont know?).html" html in progress
+  end
+
   run! if app_file == $PROGRAM_NAME
 end

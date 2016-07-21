@@ -11,6 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160721165039) do
+
+  create_table "items", force: :cascade do |t|
+    t.integer  "todo_name"
+    t.datetime "picked_at"
+  end
+
+  create_table "lists", force: :cascade do |t|
+    t.string "name"
+  end
 
 end
