@@ -11,8 +11,14 @@ class App < Sinatra::Base
   end
 
   get "/lists" do
-    #erb :"(i dont know?).html" html in progress
+    erb :"lists.html"
   end
 
+  post "/lists" do
+    List.create(params["list"])
+  end
+
+  get "/lists/:names" do
+    
   run! if app_file == $PROGRAM_NAME
 end
