@@ -18,3 +18,6 @@ class AppTest < Minitest::Test
     assert response.ok?
   end
 end
+  #def test_list_has_list
+  #response = get 
+  #end

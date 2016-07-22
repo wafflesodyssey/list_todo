@@ -18,7 +18,8 @@ class App < Sinatra::Base
     List.create(params["list"])
   end
 
-  get "/lists/:names" do
-    
+  #get "/lists/:names" do
+  #end
+
   run! if app_file == $PROGRAM_NAME
 end
