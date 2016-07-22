@@ -17,7 +17,10 @@ class AppTest < Minitest::Test
     response = get "/"
     assert response.ok?
   end
+
+  def test_list_has_list
+    List.create({name: "bucket list" })
+    response = get "/lists"
+    assert_includes response.body, "bucket list"
+  end
 end
-  #def test_list_has_list
-  #response = get 
-  #end
